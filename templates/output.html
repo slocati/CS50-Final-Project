@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <title>YOUR CHARACTER</title>
+    </head>
+
+    <body>
+        <div class="phrases">
+            <p class="display-5">The Star Wars character of your personality is...</p>
+        </div>
+        <div class="conclusion">
+            <img src="{{ url_for('static', filename= winner_pic) }}" alt={{winner_pic}}>
+            <h3>{{winner}}</h3>
+            <h6>{{winner_desc}}</h6>
+            <h4>Your coincidence rate is {{winner_res}}%!</h4>
+        </div>
+    </body>
+    
+</html>
